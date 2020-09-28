@@ -50,7 +50,7 @@ function newUrl(urlStr) {
 
 exports.handler = function(event, context, callback) {
   const ret = fetchHandler(event)
-    .catch(err => makeRes('cfworker error:\n' + err.stack, 502))
+    .catch(err => callback(null,{body: 'cfworker error:\n' + err.stack, statusCode: 502}))
   event.respondWith(ret)
 }
 

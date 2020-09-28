@@ -46,11 +46,11 @@ function newUrl(urlStr) {
 }
 
 
-addEventListener('fetch', e => {
-  const ret = fetchHandler(e)
-    .catch(err => makeRes('cfworker error:\n' + err.stack, 502))
-  e.respondWith(ret)
-})
+//addEventListener('fetch', e => {
+  //const ret = fetchHandler(e)
+    //.catch(err => makeRes('cfworker error:\n' + err.stack, 502))
+  //e.respondWith(ret)
+//})
 
 
 /**

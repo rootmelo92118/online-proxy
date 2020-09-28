@@ -5,6 +5,10 @@
  */
 const ASSET_URL = 'https://www.fullaccesstointernet.pp.ua/jsproxy'
 
+const fetch = require('node-fetch');
+global.fetch = fetch
+global.Headers = fetch.Headers;
+
 const JS_VER = 10
 const MAX_RETRY = 1
 

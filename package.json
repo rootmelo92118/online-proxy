@@ -15,6 +15,12 @@
   ],
   "author": "rootmelo92118",
   "license": "ISC",
+  "devDependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
   "bugs": {
     "url": "https://github.com/rootmelo92118/online-proxy/issues"
   },
